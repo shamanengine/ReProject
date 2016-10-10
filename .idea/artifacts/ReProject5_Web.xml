@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ReProject5:Web">
+    <output-path>$PROJECT_DIR$/out/artifacts/ReProject5_Web</output-path>
+    <root id="archive" name="ReProject5_Web.war">
+      <element id="artifact" artifact-name="ReProject5:Web exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="mysql-connector-java-5.1.38-bin" />
+          <element id="library" level="project" name="jstl-1.2" />
+          <element id="library" level="project" name="log4j-1.2.17" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
