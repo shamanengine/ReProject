@@ -8,6 +8,10 @@ import java.sql.Date;
  * @author A.Tymchenko
  * @version 1.0, 21.12.2015
  */
+
+/**
+ * Entity class for Rent (rent contract) representation
+ */
 public class RentEntity implements Serializable {
     // Fields
     private Integer     rentId;

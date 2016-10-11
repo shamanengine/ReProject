@@ -11,10 +11,19 @@ import javax.servlet.http.HttpServletResponse;
  */
 
 /**
- * Command for main page exposure
+ * Command for login page exposure
  */
 class ShowLoginPageCommand implements ICommand {
-
+    /**
+     * Checks whether there is a user/ admin in request,
+     * if so, redirects to appropriate page;
+     * if not, sets an error message and returns login page.
+     *
+     * @param request    - HttpServletRequest for the command.
+     * @param response   - HttpServletResponse for the command.
+     * @param daoFactory - DAOFactory for this command.
+     * @return String representation of View.
+     */
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response, DAOFactory daoFactory) {
         if (UserChecker.checkUser(request, USER_ROLE_ID) != null) {

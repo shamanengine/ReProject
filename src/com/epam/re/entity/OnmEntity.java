@@ -6,6 +6,10 @@ import java.io.Serializable;
  * @author A.Tymchenko
  * @version 1.0, 21.12.2015
  */
+
+/**
+ * Entity class for Onm (real estate object) representation
+ */
 public class OnmEntity implements Serializable {
     // Fields
     private Integer onmId;

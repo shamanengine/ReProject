@@ -8,6 +8,11 @@ import java.sql.Date;
  * @author A.Tymchenko
  * @version 1.0, 23.12.2015
  */
+
+/**
+ * Class representing master view;
+ * Table with information about real estate objects and contract terms
+ */
 public class MasterView implements Serializable {
     // Fields
     private Integer     rentId;

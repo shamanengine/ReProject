@@ -14,7 +14,10 @@ import java.sql.Date;
  */
 
 /**
- * JDBC implementation for rent DAO
+ * JDBC implementation for rents DAO
+ *
+ * @see com.epam.re.daol.interfaces.RentDAO
+ * @see com.epam.re.entity.RentEntity
  */
 class RentDAOJDBC implements RentDAO {
     // Constants
@@ -31,18 +34,7 @@ class RentDAOJDBC implements RentDAO {
         this.daoFactory = daoFactory;
     }
 
-    /**
-     * Adds a new rent, all params like in DB
-     *
-     * @param userId
-     * @param onmId
-     * @param contractor
-     * @param square
-     * @param rent
-     * @param startD
-     * @param endD
-     * @throws Exception
-     */
+    // Methods
     @Override
     public void addRent(
             Integer userId, Integer onmId, String contractor,

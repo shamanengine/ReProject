@@ -11,11 +11,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author Raccoon
- * @version 1.0, 22.12.2015.
+ * @author A.Tymchenko
+ * @version 1.0, 22.12.2015
+ */
+
+/**
+ * JDBC implementation for filia DAO
+ *
+ * @see com.epam.re.daol.interfaces.FiliaDAO
+ * @see com.epam.re.entity.FiliaEntity
  */
 class FiliaDAOJDBC implements FiliaDAO {
-
     // Constants
     private static final String SQL_FIND_ALL =
             "SELECT " +
@@ -36,11 +42,12 @@ class FiliaDAOJDBC implements FiliaDAO {
     // Fields
     private DAOFactory daoFactory;
 
-    // Constructor
+    // Constructors
     public FiliaDAOJDBC(DAOFactory daoFactory) {
         this.daoFactory = daoFactory;
     }
 
+    // Methods
     @Override
     public List<FiliaEntity> findAll() {
         List<FiliaEntity> filias = new ArrayList<>();
@@ -84,7 +91,6 @@ class FiliaDAOJDBC implements FiliaDAO {
             e.getMessage();
         } catch (Exception e) {
             e.printStackTrace();
-            e.getMessage();
         }
 
         return filiaEntity;

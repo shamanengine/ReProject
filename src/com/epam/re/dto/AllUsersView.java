@@ -6,6 +6,10 @@ import java.io.Serializable;
  * @author A.Tymchenko
  * @version 1.0, 23.12.2015
  */
+
+/**
+ * Class representing view of all user in the system (for admin)
+ */
 public class AllUsersView implements Serializable {
     // Fields
     private Integer userId;

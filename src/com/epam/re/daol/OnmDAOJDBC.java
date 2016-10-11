@@ -15,33 +15,41 @@ import java.util.List;
  * @author A.Tymchenko
  * @version 1.0, 27.12.2015
  */
-class OnmDAOJDBC implements OnmDAO {
 
+/**
+ * JDBC implementation for users master view DAO
+ *
+ * @see com.epam.re.daol.interfaces.OnmDAO
+ * @see com.epam.re.entity.OnmEntity
+ */
+class OnmDAOJDBC implements OnmDAO {
+    // Constants
     private static final String SQL_FIND_ONM_BY_ADDRESS =
             "SELECT " +
                     "ONM_ID, FILIA_ID, ADDRESS_C " +
-            "FROM " +
+                    "FROM " +
                     "T_ONM " +
-            "WHERE " +
+                    "WHERE " +
                     "ADDRESS_C = ?" +
-            "LIMIT 1;";
+                    "LIMIT 1;";
 
     private static final String SQL_FIND_ONM_BY_FILIA =
             "SELECT " +
                     "ONM_ID, FILIA_ID, ADDRESS_C " +
-            "FROM " +
+                    "FROM " +
                     "T_ONM " +
-            "WHERE " +
+                    "WHERE " +
                     "FILIA_ID = ?";
 
     // Fields
     private DAOFactory daoFactory;
 
-    // Constructor
+    // Constructors
     public OnmDAOJDBC(DAOFactory daoFactory) {
         this.daoFactory = daoFactory;
     }
 
+    // Methods
     @Override
     public OnmEntity findOnmByAddress(String address) {
         OnmEntity onmEntity = new OnmEntity();
@@ -64,7 +72,6 @@ class OnmDAOJDBC implements OnmDAO {
             e.getMessage();
         } catch (Exception e) {
             e.printStackTrace();
-            e.getMessage();
         }
 
         return onmEntity;
@@ -75,7 +82,7 @@ class OnmDAOJDBC implements OnmDAO {
         List<OnmEntity> onmList = new ArrayList<>();
 
         try (Connection connection = daoFactory.getConnection();
-            PreparedStatement statement = connection.prepareStatement(SQL_FIND_ONM_BY_FILIA)) {
+             PreparedStatement statement = connection.prepareStatement(SQL_FIND_ONM_BY_FILIA)) {
 
             statement.setInt(1, filiaId);
             ResultSet resultSet = statement.executeQuery();

@@ -1,9 +1,8 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: Raccoon
+  User: A.Tymchenko
   Date: 22.12.2015
-  Time: 20:49
-  To change this template use File | Settings | File Templates.
+
+  View to display main page (rents of concrete user)
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

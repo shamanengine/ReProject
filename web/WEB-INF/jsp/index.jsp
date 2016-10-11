@@ -1,9 +1,8 @@
 <%--
-  Created by IntelliJ IDEA.
   User: A.Tymchenko
   Date: 21.12.2015
-  Time: 11:21
-  To change this template use File | Settings | File Templates.
+
+  View to display login page
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>

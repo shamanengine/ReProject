@@ -17,11 +17,13 @@ import java.util.List;
  */
 
 /**
- * JDBC implementation for users masterview DAO
+ * JDBC implementation for users master view DAO
+ *
+ * @see com.epam.re.daol.interfaces.MasterViewDAO
+ * @see com.epam.re.dto.MasterView
  */
 class MasterViewDAOJDBC implements MasterViewDAO {
-
-    // Contstants
+    // Constants
     private static final String SQL_RENT_VIEW_BY_USER =
             "SELECT " +
                     "RENT_ID, " +
@@ -53,10 +55,12 @@ class MasterViewDAOJDBC implements MasterViewDAO {
     // Fields
     private DAOFactory daoFactory;
 
-    // Constructor
+    // Constructors
     public MasterViewDAOJDBC(DAOFactory daoFactory) {
         this.daoFactory = daoFactory;
     }
+
+    // Methods
 
     /**
      * Gets List of rent views for user

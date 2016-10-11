@@ -6,6 +6,11 @@ import java.io.Serializable;
  * @author A.Tymchenko
  * @version 1.0, 21.12.2015
  */
+
+/**
+ * Entity class for Filia representation
+ * Filia - region where Onm (real estate object) is registered
+ */
 public class FiliaEntity implements Serializable {
     // Fields
     private Integer filiaId;

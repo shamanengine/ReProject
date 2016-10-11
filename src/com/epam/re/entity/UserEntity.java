@@ -7,6 +7,10 @@ import java.io.Serializable;
  * @version 1.0, 21.12.2015.
  */
 
+/**
+ * Entity class for user representation
+ */
+
 public class UserEntity implements Serializable {
     // Fields
     private Integer userId;

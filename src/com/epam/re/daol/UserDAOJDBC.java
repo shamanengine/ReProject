@@ -12,6 +12,13 @@ import java.sql.SQLException;
  * @author A.Tymchenko
  * @version 1.0, 22.12.2015.
  */
+
+/**
+ * JDBC implementation for user DAO
+ *
+ * @see com.epam.re.daol.interfaces.UserDAO
+ * @see com.epam.re.entity.UserEntity
+ */
 class UserDAOJDBC implements UserDAO {
     // Constants
     private static final String SQL_FIND_USER_BY_NAME =
@@ -67,7 +74,6 @@ class UserDAOJDBC implements UserDAO {
 
         return userEntity;
     }
-
 
     @Override
     public void changeUserStatusByID(Integer userId) {

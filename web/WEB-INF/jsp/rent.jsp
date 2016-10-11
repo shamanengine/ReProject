@@ -1,9 +1,8 @@
 <%--
-  Created by IntelliJ IDEA.
   User: A.Tymchenko
   Date: 27.12.2015
-  Time: 20:26
-  To change this template use File | Settings | File Templates.
+
+  View to display forms for new rent addition
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -122,10 +121,6 @@
                 <input type="submit" value="OK">
             </td>
             <td>
-                <%--<button><a href="/main">Cancel</a></button>
-                <form id="button-ok" method="POST" action="/main">
-                    <input type="submit" value="OK2">
-                </form>--%>
             </td>
         </tr>
         </tbody>

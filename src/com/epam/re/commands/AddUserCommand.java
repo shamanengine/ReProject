@@ -36,6 +36,7 @@ class AddUserCommand implements ICommand {
      * Checks user role.
      * If this is user redirect to /main
      * If this is admin redirect to /admin
+     *
      * If ain't any:
      * assembles new user by parameters in request
      * and adds it to base through DAO,

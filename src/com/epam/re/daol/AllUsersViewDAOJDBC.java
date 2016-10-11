@@ -15,6 +15,13 @@ import java.util.List;
  * @version 1.0, 23.12.2015
  */
 
+/**
+ * JDBC implementation for a view of all users (for admin) DAO
+ *
+ * @see com.epam.re.daol.interfaces.AllUsersViewDAO
+ * @see com.epam.re.dto.AllUsersView
+ */
+
 class AllUsersViewDAOJDBC implements AllUsersViewDAO {
 
     // Contstants
